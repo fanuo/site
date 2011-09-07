@@ -1,0 +1,214 @@
+/*
+Author: Jim Barraud, modified by Fernand Pajot
+*/
+
+/* Reset All Styles */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Global Styles */
+
+body{
+  background: #fff;
+  font: 62.5% constantia, palatino, "times new roman";
+  color: #333;
+}
+strong{
+  font-weight: bold;
+}
+
+a:link,
+a:visited{
+  color: #9C8A6A;
+  text-decoration: none;
+}
+a:hover,
+a:active{
+  color: #3E372B;
+  text-decoration: underline;
+}
+
+/* specific fonts */
+
+#root h1 {
+  margin: 10px 0 20px;
+  font-size: 3.3em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  word-spacing: .2em;
+}
+#root h1 a{
+  padding-right: 60px;
+  margin-left: 60px;
+}
+#root h1 a:link,
+#root h1 a:visited{
+  color: #000;
+}
+#root h1 a:hover,
+#root h1 a:active{
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Structure */
+
+#siteWrapper{
+  margin: 0 auto;
+  padding-top: 15px;
+  width: 500px;
+  text-align: center;
+  position: relative;  
+}
+
+#siteDescription{
+  font-size: 1.2em;
+  margin: 10px auto 0;
+  width: 400px;
+  padding: 0 0 30px;
+  color: #999;
+  text-align: center;
+  font-style: italic;
+}
+
+/* home */
+
+#posts{
+	text-align: left;
+}
+
+#posts h1 {
+	margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 2.4em;
+  font-weight: normal;
+  color: #000;
+  text-transform: uppercase;
+}
+
+ul.posts {
+  list-style-type: none;
+}
+
+ul.posts li {
+	line-height: 1.8em;
+	font-size: 1.4em;
+	font-weight: normal;
+	color: #999;
+	font-family: Monaco, "Courier New", monospace;
+}
+
+#posts a:link,
+#posts a:hover,
+#posts a:active,
+#posts a:visited{
+  color: #444;
+	margin-left: 5px;
+	font-weight: bold;
+	font-size: 1.3em;
+	font-family: constantia, palatino, "times new roman";;
+}
+
+/* Single Post Page */
+
+#post h1{
+	margin-top: 30px;
+  margin-bottom: 30px;
+	border-top: 1px solid #efefef;
+  border-bottom: none;
+	font-size: 3.5em;
+	color: #333;
+  border: none;
+  padding-bottom: 30px;
+  font-family: constantia, palatino, "times new roman";
+  font-weight: bold;
+  margin: 0 0 5px;
+  font-style: normal;
+	text-transform: normal;
+  position: static;
+}
+
+#entry {
+	font-size: 1.6em;
+	text-align: justify;
+	width: 550px;
+	margin: 0 -25px 0;
+}
+
+#entry h1,
+#entry h2,
+#entry h3{
+	color: #333;
+  border: none;
+  padding: 0;
+  font-family: constantia, palatino, times new roman;
+  font-weight: bold;
+  margin: 0 0 5px;
+  font-style: normal;
+  position: static;
+}
+
+#entry h1{
+	font-size: 1.6em;
+}
+
+#entry h2{
+	font-size: 1.3em;
+}
+
+#entry h3,
+#entry h4,
+#entry h5,
+#entry h6{
+  font-size: 1em;
+}
