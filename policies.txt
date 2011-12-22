@@ -11,7 +11,7 @@ http://www.epigram.me.s3-website-us-east-1.amazonaws.com/
 				"AWS": "*"
 			},
 			"Action": "s3:GetObject",
-			"Resource": "arn:aws:s3:::epigram.me/*"
+			"Resource": "arn:aws:s3:::www.epigram.me/*"
 		}
 	]
 }
