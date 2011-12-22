@@ -1,0 +1,17 @@
+http://www.epigram.me.s3-website-us-east-1.amazonaws.com/
+
+{
+	"Version": "2008-10-17",
+	"Id": "9d9683df-edb9-48fa-8d4f-a7f6d36f4adc",
+	"Statement": [
+		{
+			"Sid": "AddPerm",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "*"
+			},
+			"Action": "s3:GetObject",
+			"Resource": "arn:aws:s3:::epigram.me/*"
+		}
+	]
+}

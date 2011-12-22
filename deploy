@@ -1,0 +1,5 @@
+#!/bin/sh
+cd ~/site
+./site build
+cd ~/site/_site
+s3cmd sync * s3://www.epigram.me --reduced-redundancy
