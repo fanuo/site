@@ -10,6 +10,11 @@ import Hakyll
 
 main :: IO ()
 main = hakyll $ do
+    -- Copy downloadable files
+    match "files/*" $ do
+        route idRoute
+        compile copyFileCompiler
+
     -- Compress CSS
     match "css/*" $ do
         route   idRoute
