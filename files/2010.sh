@@ -9,9 +9,9 @@ do
 	awk 'BEGIN {FS="\""} {if ($2=="wallpaper_link") print $4}' |
 	while read line
 	do
-		curl "${root2}${line}" |
-		awk 'BEGIN {FS="\""} {if ($2=="download_link") print $4}' |
-	  xargs -I % curl -o $week"-"$i".jpg" %
+    curl "${root2}${line}" |
+    awk 'BEGIN {FS="\""} {if ($2=="download_link") print $4}' |
+    xargs -I % curl -o $week"-"$i".jpg" %
 		let i=i+1
 	done
 done
